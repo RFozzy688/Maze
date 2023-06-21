@@ -1,4 +1,6 @@
-﻿namespace Maze
+﻿using System.Drawing;
+
+namespace Maze
 {
     partial class Form1
     {
@@ -28,7 +30,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+
+            this.SuspendLayout(); 
             // 
             // Form1
             // 
@@ -39,10 +42,16 @@
             this.Text = "Form1";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.ResumeLayout(false);
-
+            this.PerformLayout();
         }
 
         #endregion
+
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel4;
     }
 }
 

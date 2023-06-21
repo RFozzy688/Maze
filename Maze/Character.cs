@@ -11,10 +11,12 @@ namespace Maze
     {
         public int Health { get; set; }
         public int CurrentMedals { get; set; }
+        public int Steps { get; set; }
         public Character() 
         {
             Health = 100;
             CurrentMedals = 0;
+            Steps = 0;
         }
         public void MoveRight(Labirint l)
         {
